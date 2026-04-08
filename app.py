@@ -1,85 +1,78 @@
-import os
 import re
-import tempfile
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import yt_dlp
 
 app = Flask(__name__)
-CORS(app)  # બધા domains માંથી access મળે
+CORS(app)
 
-# Cookies ફાઈલનો પાથ (GitHub માં રાખેલી)
-COOKIE_FILE_PATH = 'cookies.txt'
-
-def get_video_info(video_url):
-    """વીડિયોની માહિતી અને ડાઉનલોડ URL મેળવો"""
-    
-    # Cookies ફાઈલ ચેક કરો
-    if not os.path.exists(COOKIE_FILE_PATH):
-        return None, "cookies.txt file not found in repository"
+def get_youtube_direct_link(youtube_url):
+    """YouTube વીડિયોની Direct Download Link (MP4) મેળવો"""
     
     ydl_opts = {
-        'format': 'best',  # શ્રેષ્ઠ ક્વોલિટી
-        'cookiefile': COOKIE_FILE_PATH,
+        'format': 'best[ext=mp4]/best',  # ફક્ત MP4 ફોર્મેટ
         'quiet': True,
         'no_warnings': True,
-        'ignoreerrors': True,
         'extract_flat': False,
     }
     
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            info = ydl.extract_info(video_url, download=False)
+            info = ydl.extract_info(youtube_url, download=False)
             
-            if info is None:
-                return None, "Video not found or access denied"
+            # Direct Video URL મેળવો
+            video_url = info.get('url')
             
-            # વીડિયો URL મેળવો
-            video_download_url = info.get('url')
-            if not video_download_url and 'requested_formats' in info:
-                video_download_url = info['requested_formats'][0]['url']
+            # જો ના મળે તો બીજા ફોર્મેટમાં શોધો
+            if not video_url and 'formats' in info:
+                for f in info['formats']:
+                    if f.get('ext') == 'mp4' and f.get('vcodec') != 'none':
+                        video_url = f.get('url')
+                        break
             
-            if not video_download_url:
-                return None, "Could not extract video URL"
+            if not video_url:
+                return None, "No direct MP4 link found"
             
             return {
                 'title': info.get('title', 'Unknown'),
                 'duration': info.get('duration', 0),
                 'uploader': info.get('uploader', 'Unknown'),
-                'download_url': video_download_url
+                'views': info.get('view_count', 0),
+                'thumbnail': info.get('thumbnail', ''),
+                'direct_link': video_url
             }, None
             
     except Exception as e:
         return None, str(e)
 
 
-@app.route('/download', methods=['GET', 'POST'])
-def download():
-    """મુખ્ય API એન્ડપોઈન્ટ - GET અને POST બંને સપોર્ટ કરે છે"""
+@app.route('/yt', methods=['GET', 'POST'])
+def youtube_direct():
+    """YouTube Direct Link API - GET અથવા POST બંને ચાલશે"""
     
-    # URL મેળવો (GET અથવા POST માંથી)
+    # URL મેળવો
     if request.method == 'GET':
-        video_url = request.args.get('url')
+        url = request.args.get('url')
     else:
         data = request.get_json()
-        video_url = data.get('url') if data else None
+        url = data.get('url') if data else None
     
-    # URL ચેક કરો
-    if not video_url:
+    # URL ચેક
+    if not url:
         return jsonify({
             'success': False,
-            'error': 'URL is required. Use ?url=VIDEO_LINK or POST {"url": "VIDEO_LINK"}'
+            'error': 'URL is required. Use ?url=YOUTUBE_LINK or POST {"url": "YOUTUBE_LINK"}'
         }), 400
     
-    # /class/ લિંક હોય તો ગાઇડ કરો
-    if '/class/' in video_url and 'live' not in video_url and 'classroom' not in video_url:
+    # YouTube URL છે કે નહીં ચેક કરો
+    if 'youtube.com' not in url and 'youtu.be' not in url:
         return jsonify({
             'success': False,
-            'error': 'This is a class page link, not a video link.\n\nHow to get video link:\n1. Open this class on Unacademy\n2. Click "Go to Classroom" or "Watch now"\n3. Copy the URL from browser address bar when video is playing\n4. Use that URL here'
+            'error': 'This is not a YouTube URL. Please provide a valid YouTube link.'
         }), 400
     
-    # વીડિયો માહિતી મેળવો
-    video_info, error = get_video_info(video_url)
+    # Direct Link મેળવો
+    video_info, error = get_youtube_direct_link(url)
     
     if error:
         return jsonify({
@@ -90,32 +83,36 @@ def download():
     return jsonify({
         'success': True,
         'title': video_info['title'],
-        'duration': video_info['duration'],
+        'duration': f"{video_info['duration'] // 60}:{video_info['duration'] % 60:02d}",
         'uploader': video_info['uploader'],
-        'download_url': video_info['download_url']
+        'views': video_info['views'],
+        'thumbnail': video_info['thumbnail'],
+        'direct_link': video_info['direct_link']
     })
 
 
 @app.route('/', methods=['GET'])
 def home():
-    """હોમ પેજ - API વપરાશની માહિતી"""
+    """API વપરાશની માહિતી"""
     return jsonify({
-        'name': 'Unacademy Video Downloader API',
+        'name': 'YouTube Direct Link Generator',
         'version': '1.0.0',
-        'endpoints': {
-            '/download': {
-                'method': 'GET or POST',
-                'params': {
-                    'url': 'Unacademy video URL (live session or classroom)'
-                },
-                'example': '/download?url=https://unacademy.com/livesession/...'
-            },
-            '/': {
-                'method': 'GET',
-                'description': 'This help page'
-            }
+        'endpoint': '/yt',
+        'usage': {
+            'method': 'GET or POST',
+            'params': {'url': 'YouTube video URL'},
+            'example_1': '/yt?url=https://youtu.be/dQw4w9WgXcQ',
+            'example_2': '/yt?url=https://www.youtube.com/watch?v=dQw4w9WgXcQ'
         },
-        'note': 'Do NOT use /class/ links. Play the video first, then copy the URL from browser.'
+        'response': {
+            'success': 'true/false',
+            'title': 'Video title',
+            'duration': 'Video duration',
+            'uploader': 'Channel name',
+            'views': 'View count',
+            'thumbnail': 'Thumbnail URL',
+            'direct_link': 'Direct MP4 download link'
+        }
     })
 
 
