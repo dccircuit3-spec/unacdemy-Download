@@ -5,40 +5,30 @@ import yt_dlp
 
 app = Flask(__name__)
 
-COOKIES_CONTENT = os.environ.get('UNACADEMY_COOKIES', '')
+# GitHub પરથી cookies.txt વાંચો
+COOKIE_FILE_PATH = 'cookies.txt'
 
-@app.route('/download', methods=['GET', 'POST'])
+@app.route('/download', methods=['GET'])
 def download():
-    # GET માંથી url લો (?url=...)
-    if request.method == 'GET':
-        video_url = request.args.get('url')
-    else:  # POST
-        video_url = request.json.get('url') if request.is_json else None
+    video_url = request.args.get('url')
     
     if not video_url:
         return jsonify({'error': 'URL is required. Use ?url=YOUR_VIDEO_LINK'}), 400
     
-    if not COOKIES_CONTENT:
-        return jsonify({'error': 'Cookies not configured. Add UNACADEMY_COOKIES variable in Railway.'}), 500
-    
-    # Temp cookie file
-    with tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False) as f:
-        f.write(COOKIES_CONTENT)
-        cookie_file = f.name
+    # Check if cookie file exists
+    if not os.path.exists(COOKIE_FILE_PATH):
+        return jsonify({'error': 'cookies.txt file not found in repository'}), 500
     
     try:
         ydl_opts = {
             'format': 'best',
-            'cookiefile': cookie_file,
+            'cookiefile': COOKIE_FILE_PATH,  # Direct file path
             'quiet': True,
         }
         
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(video_url, download=False)
-            
             video_download_url = info.get('url')
-            if not video_download_url and 'requested_formats' in info:
-                video_download_url = info['requested_formats'][0]['url']
             
             return jsonify({
                 'success': True,
@@ -49,20 +39,10 @@ def download():
             
     except Exception as e:
         return jsonify({'error': str(e)}), 500
-    finally:
-        os.unlink(cookie_file)
 
 @app.route('/')
 def home():
-    return '''
-    <h2>Unacademy Downloader</h2>
-    <p><b>ઉપયોગ કરવાની રીત:</b></p>
-    <code>GET /download?url=UNACADEMY_VIDEO_URL</code>
-    <br><br>
-    <b>ઉદાહરણ:</b>
-    <br>
-    <a href="/download?url=https://unacademy.com/course/.../lecture/...">/download?url=https://unacademy.com/course/.../lecture/...</a>
-    '''
+    return 'Unacademy Downloader Ready! Use /download?url=VIDEO_LINK'
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
