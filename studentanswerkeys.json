@@ -1,15 +1,6 @@
 {
-    "exam_start_time": "2026-10-28 18:00:00",
+    "exam_start_time": "2026-10-28 21:00:00",
     "students": [
-        {
-            "name": "Dravid Parmar",
-            "mobile": "6353141147",
-            "course": "ELECTRICAL ASISTANT",
-            "marks": "3",
-            "image": "https://drive.google.com/uc?export=download&id=1STecE0OJXR13L7TE9RRkYsjzFh8kf75s",
-            "answer_key": "https://drive.google.com/uc?export=download&id=1Z7OxjAq5EqyHhpEY1FboNRShTWElURFB",
-            "last_updated": "2026-10-28, 07:05 PM"
-        },
         {
             "name": "Rakesh Solanki",
             "mobile": "8925345623",
@@ -17,7 +8,7 @@
             "marks": "88",
             "image": "https://drive.google.com/uc?export=download&id=1rb7HXmuw0aKOK1RSy3_Rg3GuMbWvLo7S",
             "answer_key": "https://drive.google.com/uc?export=download&id=1C_J2KaW-QxPHnK39N3n6qxXCsAhlZGd4",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "CHAVDA KRIPALSINH MAHENDRASINH",
@@ -26,7 +17,7 @@
             "marks": "11",
             "image": "https://drive.google.com/uc?export=download&id=1V_7Igqbzg-dUfKp8TIqLEhUk-boXukJe",
             "answer_key": "https://drive.google.com/uc?export=download&id=1tfmcV3_qVsT-sExG8IqQo7RLs1gKHg4G",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "Patel Ranjit Bhai MaheshBhai",
@@ -35,7 +26,7 @@
             "marks": "56",
             "image": "https://drive.google.com/uc?export=download&id=14mNvVRXIPsB9JL4Ib7F52kCUUyyo4num",
             "answer_key": "https://drive.google.com/uc?export=download&id=15CA9Nkt7Ci3tLaok6WL9dWjH3Gc8ymoc",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "pandya labh vijaybhai",
@@ -44,7 +35,7 @@
             "marks": "5",
             "image": "https://drive.google.com/uc?export=download&id=1REswaKDx265Jj_9hpYM2Ylj1FyFy6Tkz",
             "answer_key": "https://drive.google.com/uc?export=download&id=1RXYhytnjUp5thfQaszqDlpFeMzZutqaw",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "Rathod Nilesh",
@@ -53,7 +44,7 @@
             "marks": "7",
             "image": "https://drive.google.com/uc?export=download&id=1n0VFLRPKS-CorbUfzeVzX04KnR5Qq2j1",
             "answer_key": "https://drive.google.com/uc?export=download&id=1HSDW2K-ZA1jrbBFGm-zDhB-utrwNUZ-L",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "dhaval sondarva",
@@ -62,7 +53,7 @@
             "marks": "25",
             "image": "https://drive.google.com/uc?export=download&id=1ODB4u-qQjrS6Jj0af-ma_QTZRhr6TaMk",
             "answer_key": "https://drive.google.com/uc?export=download&id=1ILzyNVdZW2AaVb8PffppfoocvltIfFAW",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "vijay Taviyad",
@@ -71,7 +62,7 @@
             "marks": "66",
             "image": "https://drive.google.com/uc?export=download&id=1mdPGOfjoiAgBencOnipiCHmihMZN-Iwu",
             "answer_key": "https://drive.google.com/uc?export=download&id=1kSxuSoElJXymK9KTZvUrYAJh9QON9Guy",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "maulik parmar",
@@ -80,7 +71,7 @@
             "marks": "47",
             "image": "https://drive.google.com/uc?export=download&id=1ZdWLuAChEcX0s4NqY-DXCL-xp3ixACA9",
             "answer_key": "https://drive.google.com/uc?export=download&id=1pn5eM1BLrz3w5u8olwsLbtsoYLjwaRW-",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "Rathva Ayush Kumar D",
@@ -89,7 +80,7 @@
             "marks": "44",
             "image": "https://drive.google.com/uc?export=download&id=1DisKFbTws6tN8TSwbtzBFns3hfl0vepg",
             "answer_key": "https://drive.google.com/uc?export=download&id=1ysH-SBYow0PKF2hE4hE3F7_HGlkerMT0",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "Parmar parthkumar",
@@ -98,7 +89,7 @@
             "marks": "21",
             "image": "https://drive.google.com/uc?export=download&id=1GAQlk4cHI14I1jVc_Ohv6YZ8WDNSNhNA",
             "answer_key": "https://drive.google.com/uc?export=download&id=1SBrmnZPsczox8kCgTDvE9eMozsfmb1-Y",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "Sailesh Parmar",
@@ -107,7 +98,7 @@
             "marks": "61",
             "image": "https://drive.google.com/uc?export=download&id=1Tr4IOelVqSK9JK_itAkWqZ752CP1i19g",
             "answer_key": "https://drive.google.com/uc?export=download&id=1dV4TjUz-xB4TuG_hsMWTA4uPw2YAYCPd",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "Morvadiya sahil",
@@ -116,7 +107,7 @@
             "marks": "68",
             "image": "https://drive.google.com/uc?export=download&id=1kkLO4WKKQOY8PdC5ufqs_xwO3utqicfv",
             "answer_key": "https://drive.google.com/uc?export=download&id=1ZefByh_eeLeMhoDmmuiwp-9Wp3dpekeD",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "Mahendra Vanzara",
@@ -125,7 +116,7 @@
             "marks": "51",
             "image": "https://drive.google.com/uc?export=download&id=18TFGjdk9SENOtb4sf_DQZOWpsrkXWaOu",
             "answer_key": "https://drive.google.com/uc?export=download&id=1Q_T5wyP9BeToCPPjK-H59x8J6czNZVsb",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "Nisarta Mayankbhai Ramasingbhai",
@@ -134,7 +125,7 @@
             "marks": "59",
             "image": "https://drive.google.com/uc?export=download&id=1Q53rEHUhZN0jT-P0-08XMBjC2h9X_Zd-",
             "answer_key": "https://drive.google.com/uc?export=download&id=1m7CmgGKFuZQhPLLfxhWi8B_2okzGnQFV",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "Zala Chiragsinh prvinsinh",
@@ -143,7 +134,7 @@
             "marks": "32",
             "image": "https://drive.google.com/uc?export=download&id=14DK39wRxKu5fe-_crLvqqRfJEYWN51Dh",
             "answer_key": "https://drive.google.com/uc?export=download&id=1nExTVZinM4lx19a-B7W6D74nsSWEbHTJ",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "anil sodha",
@@ -152,7 +143,7 @@
             "marks": "61",
             "image": "https://drive.google.com/uc?export=download&id=19fr7zhaDXo7dGlettTbmIaSkYJ11Hu4x",
             "answer_key": "https://drive.google.com/uc?export=download&id=1IGeGoM6HJqQwjdwec0iAwdwWI86mvreX",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "nilesh rathva",
@@ -161,7 +152,7 @@
             "marks": "52",
             "image": "https://drive.google.com/uc?export=download&id=1ifCu-bRX9eaIs0mxt6_HuInSMpZyD9P4",
             "answer_key": "https://drive.google.com/uc?export=download&id=1SjfdY5ja3IK-GkrWE89pmBdB47QcBEqa",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "Dj Nir",
@@ -170,7 +161,7 @@
             "marks": "74",
             "image": "https://drive.google.com/uc?export=download&id=13Ei9KaD5PzCALWiUk-nyfNYP5i6u8qZG",
             "answer_key": "https://drive.google.com/uc?export=download&id=1zPA3wFpzcpbljey9Ik1vrASxLahRKMvr",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "patel viral",
@@ -179,7 +170,7 @@
             "marks": "51",
             "image": "https://drive.google.com/uc?export=download&id=1lFYZnA6AIuMHD6c2mFkWafxbxKuCd68s",
             "answer_key": "https://drive.google.com/uc?export=download&id=1ZkibNg9eyDKH9K7xiVSF_R-X7iLeJpgl",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "Rathod Vipul",
@@ -188,7 +179,7 @@
             "marks": "85",
             "image": "https://drive.google.com/uc?export=download&id=1z5AyibySid0vlfq8RPuYyy4X34JIdWig",
             "answer_key": "https://drive.google.com/uc?export=download&id=1Fqp2SBCL0zkSv1VS1pXTwxUgGi-SYXtr",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "alpesh dabhi",
@@ -197,7 +188,7 @@
             "marks": "48",
             "image": "https://drive.google.com/uc?export=download&id=1-Uz5-CzAYLUGFHvUsr2yZMJJG3SiE6dr",
             "answer_key": "https://drive.google.com/uc?export=download&id=1t7ijP17I0sTueLi988st1Z2xEwCD3d0C",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "RAJENDRASINH PAGI",
@@ -206,7 +197,7 @@
             "marks": "44",
             "image": "https://drive.google.com/uc?export=download&id=1hRxcK6cMhNBSvsNzxjdAKLtvt8r9joPF",
             "answer_key": "https://drive.google.com/uc?export=download&id=1noVZH2U2fwXZ-gt8ljCTvGIl5EIFM_8S",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
         },
         {
             "name": "Narendra Pandor",
@@ -215,7 +206,205 @@
             "marks": "16",
             "image": "https://drive.google.com/uc?export=download&id=1mDfSjKrk-v6KDSHl7Z1nVMfFRTs7T_fn",
             "answer_key": "https://drive.google.com/uc?export=download&id=1XC3JUPVJhGeeL63qB1wG8Ni6NFhpaql8",
-            "last_updated": "2026-10-28, 07:05 PM"
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Dabhi Parthivkumar",
+            "mobile": "6351481622",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "32",
+            "image": "https://drive.google.com/uc?export=download&id=1ARcW4s8w5qUhiSCCE7XHZoguEMsdtyWQ",
+            "answer_key": "https://drive.google.com/uc?export=download&id=166blIcTYPh_J-MqUWgPGlZpXNprdfNtI",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Patel Kunal",
+            "mobile": "9825416730",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "27",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Solanki Deep",
+            "mobile": "9726348150",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "51",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Chauhan Hiren",
+            "mobile": "9898246713",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "39",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Parmar Yash",
+            "mobile": "7600184529",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "55",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Jadeja Meet",
+            "mobile": "8200146735",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "23",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Makwana Ronak",
+            "mobile": "9510263847",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "42",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Gohil Vishal",
+            "mobile": "6352719048",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "36",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Vaghela Naitik",
+            "mobile": "9033471862",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "58",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Rathod Dhruv",
+            "mobile": "7874126905",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "19",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Desai Tirth",
+            "mobile": "9727105836",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "47",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Baraiya Krish",
+            "mobile": "8866031572",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "33",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Vala Harsh",
+            "mobile": "7600239418",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "54",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Thakor Rohan",
+            "mobile": "9428163750",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "29",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Pandya Darshan",
+            "mobile": "9909346821",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "45",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Patel Nirav",
+            "mobile": "8140672359",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "38",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Solanki Jay",
+            "mobile": "6354091827",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "52",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Parmar Mit",
+            "mobile": "7984532160",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "24",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Chauhan Dev",
+            "mobile": "8758326419",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "57",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Gadhavi Om",
+            "mobile": "6351209748",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "31",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Joshi Parth",
+            "mobile": "9726481035",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "49",
+            "image": "",
+            "answer_key": "",
+            "last_updated": "2026-10-28, 07:38 PM"
+        },
+        {
+            "name": "Pathan Sajidkhan",
+            "mobile": "7600796295",
+            "course": "ELECTRICAL ASISTANT",
+            "marks": "10",
+            "image": "https://drive.google.com/uc?export=download&id=1Ceei1i0EIN5qu1pLnwCmxWCrffjZ-69a",
+            "answer_key": "https://drive.google.com/uc?export=download&id=1ST1WW3EICRxzGmEvbYpmVJFFaIMQ2B8T",
+            "last_updated": "2026-10-28, 07:38 PM"
         }
     ]
 }
